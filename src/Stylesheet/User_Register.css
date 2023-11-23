@@ -1,0 +1,157 @@
+.register-page-bg {
+    background-image: url("https://cdn3.vectorstock.com/i/1000x1000/80/42/food-delivery-vector-4428042.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+
+
+  }
+  
+  .register-container {
+    padding: 20px;
+
+  }
+  
+  .register-form {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+  }
+  
+  .register-form-tag {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: #0000006c;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+  }
+  
+  .title {
+    font-size: 28px;
+    color: red;
+    text-shadow: 1px 1px 1px #070707;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: rgb(249, 249, 249);
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .message,
+  .signin {
+    color: rgba(255, 255, 255, 0.822);
+    font-size: 14px;
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a {
+    color: rgb(254, 255, 255);
+  }
+  
+  .signin a:hover {
+    text-decoration: underline rgb(255, 255, 255);
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .register-form-tag label {
+    position: relative;
+  }
+  
+  .register-form-tag label .input {
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 10px;
+  }
+  
+  .register-form-tag label .input + span {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color: rgba(36, 34, 155, 0.856);
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .register-form-tag label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .register-form-tag label .input:focus + span,
+  .register-form-tag label .input:valid + span {
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .register-form-taglabel .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: 0.3s ease;
+  }
+  
+  .submit:hover {
+    background-color: rgb(56, 90, 194);
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
